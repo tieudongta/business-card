@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="3n">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Business Card - Nhiem Nguyen</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+    </head>
+    <body>
+        <div class="card-container">
+            <div class="reminder-container">
+                <p id="flip-reminder" class="reminder">💡 Tip: Click the card to flip!</p>
+            <p id="qr-reminder" class="reminder">📱 Scan the QR code to connect me!</p>
+            </div>
+            <div class="card" id="flip-card">
+                <div class="card-front">
+                    <img src="assets\avatar.jpeg" alt="Profile Picture" class="avatar">
+                    <h1>Nhiem Nguyen</h1>
+                    <p id="typed-text"></p>
+                </div>
+                <div class="card-back">
+                    <h2>Contact Me</h2>
+                    <p>Email: nhiem.nguyentri@gmail.com</p>
+                    <p>Phone: +619-560-2343</p>
+                    <div id="qrcode"></div>
+                    <button id="download-vcard"><i class="fas fa-download"></i>Download vCard</button>
+                </div>
+            </div>
+        </div>
+        
+        <button id="toggle-theme"><i class="fas fa-moon"></i>Toggle Dark Mode</button>
+        
+        <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
